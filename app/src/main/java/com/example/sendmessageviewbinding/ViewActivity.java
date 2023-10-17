@@ -1,12 +1,13 @@
 package com.example.sendmessageviewbinding;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+
 import com.example.sendmessageviewbinding.databinding.ActivityViewBinding;
-import com.example.sendmessageviewbinding.data.model.Message;
+import com.example.sendmessageviewbinding.model.data.Message;
 
 public class ViewActivity extends AppCompatActivity {
     private ActivityViewBinding binding;

@@ -8,12 +8,12 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
+
 
 import com.example.sendmessageviewbinding.databinding.ActivitySendMessageBinding;
-import com.example.sendmessageviewbinding.data.model.Message;
-import com.example.sendmessageviewbinding.data.model.Person;
+import com.example.sendmessageviewbinding.model.data.Message;
+import com.example.sendmessageviewbinding.model.data.Person;
+
 
 public class SendMessageActivity extends AppCompatActivity {
     // Es MUY IMPORTANTE poner bien el nombre de esta clase
@@ -47,11 +47,11 @@ public class SendMessageActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             // Esto en un principio daba error porque las properties de gradle han cambiado,
             // esto: android.nonTransitiveRClass=true debe de ponerse a false y añadir esto: android.nonFinalResIds=false
-            case R.id.menu_aboutas: {
+            case R.id.Sobre_Mi:
                 Intent intent = new Intent(this, AboutActivity.class);
                 startActivity(intent);
                 return true;
-            }
+
             default:
                 return super.onOptionsItemSelected(item);
         }

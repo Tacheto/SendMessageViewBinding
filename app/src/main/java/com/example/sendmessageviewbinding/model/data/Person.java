@@ -95,14 +95,19 @@ public class Person implements Parcelable, Serializable {
         }
     };
 
+
+
     @Override
     public int describeContents() {
         return 0;
     }
 
     @Override
-    public void writeToParcel(@NonNull Parcel parcel, int i) {
-        parcel.writeString(name);
+    public void writeToParcel(@NonNull Parcel dest, int flags) {
+        dest.writeString(name);
+        dest.writeString(surname);
+        dest.writeString(dni);
+
 
     }
 }
